@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>Keyboard Navigation In A Dual List Screen</title>
+    <script src="jquery.js"></script>
+    <script>
+       $(document).ready(function() {
+           $('[data-toggle="toggle"]').change(function(){
+               $(this).parents().next('.hide').toggle();
+           });
+       })(jQuery);
+    </script>
+    
+</head>
+
+<body>
+<div class="sidebar">
+  <span style="color: #000000">
+    <br />
+      <div style="width: 65%; display: block; margin: auto;"><a class="side-title" href="/jazz/HTML_Help/help-home.html" rel="home">Jazz Help</a></div>
+    <br />
+    <br />
+    <img class="center" src="file:///C:\Users\jtamm\Documents\My Web Sites\jazzdocs\images\jp.PNG"/>
+    <br />
+    <br />
+    <div class="container">
+
+
+<div class="accordion" id="onsidebar" style="padding: 10px; width: 161px;"><a id="special_link" href="/Jazz/HTML_Help/Keyboard-Dual.html">Keyboard Navigation In A Dual List Screen</a></div>
+
+<button class="accordion" id="onsidebar">Parent Directory</button>
+<div class="panel">
+  <!-- content -->
+    <table style="margin-left: 31px; width: 181px;" cellspacing="2" cellpadding="2" border="1" width="100%">
+            <tbody>
+                <tr>
+                  <td>
+                    <a id="bbarone" style="font-size: 115%; font-weight: bold;" href="navigating-jazz.html">Navigating Jazz</a> <!-- edit href in a tag -->
+                  </td>
+                </tr>                                                 
+                <tr>                                                   
+                  <td>                                                 
+                    <a id="bbarone" href="Keyboard-Navigation.html"><ul class="a">Keyboard Navigation</ul></a> <!-- edit href in a tag, add as many sub-directories as needed -->
+                  </td>                                                
+                </tr>
+                <tr>                                                   
+                  <td>                                                 
+                    <a id="bbarone" href="Keyboard-Single.html"><ul class="a">Keyboard Navigation In A Single List Screen</ul></a> <!-- edit href in a tag -->
+                  </td>
+                </tr>                                                 
+                <tr>                                                   
+                  <td>                                                 
+                    <a id="bbarone" href="Keyboard-Dual.html"><ul class="a"><strong>Keyboard Navigation In A Dual List Screen</strong></ul></a> <!-- edit href in a tag, add as many sub-directories as needed -->
+                  </td>                                                
+                </tr>                                                 
+                <tr>                                                   
+                  <td>                                                 
+                    <a id="bbarone" href="Keyboard-Detail.html"><ul class="a">Keyboard Navigation In A Detail Screen</ul></a> <!-- edit href in a tag, add as many sub-directories as needed -->
+                  </td>                                                
+                </tr>                                                 
+                <tr>                                                   
+                  <td>                                                 
+                    <a id="bbarone" href="Sort-Indexes.html"><ul class="a">Using Sort Indexes On A List Screen</ul></a> <!-- edit href in a tag, add as many sub-directories as needed -->
+                  </td>                                                
+                </tr>                                                 
+                <tr>                                                   
+                  <td>                                                 
+                    <a id="bbarone" href="Maintaining-supplemental-files.html"><ul class="a">Maintaining Supplemental Files</ul></a> <!-- edit href in a tag, add as many sub-directories as needed -->
+                  </td>                                                
+                </tr>                                                 
+                <tr>                                                   
+                  <td>                                                 
+                    <a id="bbarone" href="Using-Filters.html"><ul class="a">Using Filters</ul></a> <!-- edit href in a tag, add as many sub-directories as needed -->
+                  </td>                                                
+                </tr>
+            </tbody>
+    </table>
+</div>
+
+
+    </div>
+  </span>
+</div>
+
+<div class="content">
+  <div  style="padding-left: 10px;">
+    <br />
+      <h1 id="heading">Keyboard Navigation In A Dual List Screen</h1>
+    <br />&nbsp;<br />
+  <br />
+  <strong>Dual List Screens</strong> are screens with two column-separated lists.  One list, typically occupying the upper-left side of the screen is the so-called <strong>parent list</strong>.  The second list, to the right of the parent, is the <strong>child list</strong>.
+  <br />
+  &nbsp;
+  <br />
+  </div>
+  <div class="info">
+  <table cellspacing="2" cellpadding="2" border="1" width="100%">
+      <thead>
+          <tr>
+            <th style="width: 100%;"></th><!-- field headings remain the same for all detail screen help pages -->
+          </tr>
+      </thead>
+  </table>
+  
+  <div style="background-color: #6fa8dc; border-left: #6fa8dc;">
+    <!-- content -->
+    <table cellspacing="2" cellpadding="2" border="1" width="100%">
+      <tbody>
+        <tr class="process">
+          <td class="process">
+              <br />
+              &nbsp;
+              <br />
+            When opening to a <strong>Dual List Screen</strong>, the cursor focus starts on the <strong>parent list</strong>.  As the user moves the cursor between records on the parent list, the contents of the <strong>child list</strong> will display records associated with the currently highlighted parent record.  In the example below, you can see how the contents of the child list (SubClasses) changes as the cursor moves from one highlighted entry (<em>fig. 1</em>) to another (<em>fig. 2</em>) in the parent (Classes) list:
+          </td>
+        </tr>
+        <tr class="process">
+          <td class="process">
+            <img alt="" src="images/dual1.png" style="border: 1px solid #000000;" />
+            <br />
+            <em>Fig. 1</em>
+          </td>
+        </tr>
+        <tr class="process">
+          <td class="process">
+            <img alt="" src="images/dual2.png" style="border: 1px solid #000000;" />
+            <br />
+            <em>Fig. 2</em>
+          </td>
+        </tr>
+        <tr class="process">
+            <td class="process">
+              <div class="sticky">
+              <!-- Sticky note template -->
+                  <blockquote class="note yellow">
+                    <cite class="note-title">NOTE: </cite>
+                    This document assumes the user is familiar with the basic List Screen keyboard navigation commands, described <a href="/Jazz/HTML_Help/Keyboard-Single.html">here</a>.  Most navigation is identical in both single and dual list pages.  This page describes the additional features unique to a Dual List Screen.
+                  </blockquote>
+              </div>
+            </td>
+        </tr>
+  
+        <tr class="process">
+            <td class="process">
+              
+              <p style="font-size: 200%;">Navigating a Dual List Screen</p>
+            </td>
+        </tr>
+  
+        <tr class="process">
+            <td class="process">
+              
+              <table dir="ltr" style="border: 1px solid #cccccc; color: #444444; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-align: start; table-layout: fixed; font-size: 13px; font-family: arial, sans, sans-serif; border-collapse: collapse; width: 50%;" cellspacing="0" cellpadding="0" border="1">
+                  <tbody>
+                      <tr style="break-inside: avoid; height: 21px;">
+                          <td rowspan="2" colspan="2" data-sheets-value="{'1':2,'2':'KEY'}" style="padding: 2px 3px; border: 1px solid #000000; font-family: Arial; font-size: 14.3px; font-weight: bold; color: #000000; vertical-align: top; background-color: #ffff00;"><span>
+                          <div style="max-height: 47.4444px;">KEY</div>
+                          </span></td>
+                          <td rowspan="1" colspan="2" data-sheets-value="{'1':2,'2':'FUNCTION'}" style="padding: 2px 3px; border-width: 1px; border-style: solid; border-color: #000000 #000000 #000000 #cccccc; font-family: Arial; font-size: 14.3px; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #ffff00;">FUNCTION</td>
+                      </tr>
+                      <tr style="break-inside: avoid; height: 21px;">
+                          <td data-sheets-value="{'1':2,'2':'LIST VIEW'}" style="padding: 2px 3px; border-width: 1px; border-style: solid; border-color: #cccccc #000000 #000000 #cccccc; font-family: Arial; font-size: 14.3px; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #ffe599;">PARENT LIST</td>
+                          <td data-sheets-value="{'1':2,'2':'BOUNCE BAR'}" style="padding: 2px 3px; border-width: 1px; border-style: solid; border-color: #cccccc #000000 #000000 #cccccc; font-size: 14.3px; font-weight: bold; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #ffe599;">CHILD LIST</td>
+                      </tr>
+                      <tr style="break-inside: avoid; height: 21px;">
+                          <td rowspan="1" colspan="2" data-sheets-value="{'1':2,'2':'TAB'}" style="padding: 2px 3px; border-width: 1px; border-style: solid; border-color: #cccccc #000000 #000000; font-family: Arial; font-size: 14.3px; font-weight: bold; color: #000000; vertical-align: middle; background-color: #FFFFFF;">CTRL + TAB</td>
+                          <td data-sheets-value="{'1':2,'2':'Switches cursor focus to bounce bar.'}" style="padding: 2px 3px; border-width: 1px; border-style: solid; border-color: #cccccc #000000 #000000 #cccccc; font-family: Arial; font-size: 14.3px; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #f4cccc;">Switches cursor focus to child list.</td>
+                          <td data-sheets-value="{'1':2,'2':'Switches cursor focus to list view'}" style="padding: 2px 3px; border-width: 1px; border-style: solid; border-color: #cccccc #000000 #000000 #cccccc; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #d9d2e9;">Switches cursor focus to parent list.</td>
+                      </tr>
+                  </tbody>
+              </table>
+            </td>
+        </tr>
+  
+  
+        <tr class="process">
+            <td class="process"><p>When first opening a dual list page, the bounce bar at the bottom of the screen is associated with the parent list, which can be activated as usual by pressing the <strong>TAB</strong> key. &nbsp;Functions such as "Add", "Change", or "Delete" are tied to parent records. &nbsp;There is usually a menu option on the bounce bar with <u>the same (or very similar) name as the title of the child list</u> - selecting this option, or by using the keyboard shortcut <strong>CTRL + TAB</strong> will move cursor focus from the parent list to the child list. &nbsp;In addition, a new bounce bar will be displayed at the bottom of the screen whose functions are tied to the child list. &nbsp;Pressing the <strong>TAB</strong> key will alternate focus between the child list and the child bounce bar. &nbsp;To return to the parent list, select the bounce bar menu item <u>with the same name as the title of the parent list</u>, or use the keyboard shortcut <strong>CTRL + TAB</strong>.</p>
+            </td>
+        </tr>
+        <!-- Single image -->
+        <tr class="process">
+            <td class="process"><img alt="" src="images/dual3.png" style="border: 1px solid #000000;" />
+            </td>
+        </tr>
+        <tr class="process">
+            <td class="process"><em>Parent list bounce bar with the "Subclass" menu item highlighted.  The title of the child list is SubClasses.  Selecting this will move focus to the child list.</em>
+            </td>
+        </tr>
+        <tr class="process">
+            <td class="process">
+  
+          </td>
+        </tr>
+        <!-- Single image -->
+        <tr class="process">
+            <td class="process"><img alt="" src="images/dual4.png" style="border: 1px solid #000000;" />
+            </td>
+        </tr>
+        <tr class="process">
+            <td class="process"><em>Child list bounce bar with the "Class" menu item highlighted.  The title of the parent list is Classes.  Selecting this item will return focus to the parent list.</em>
+            </td>
+        </tr>
+  
+        <tr class="process">
+            <td class="process">
+              <p style="font-size: 200%;">File associations - Adding a record</p>
+            </td>
+        </tr>
+        <tr class="process">
+            <td class="process">
+              <p>Adding a record in the child list will automatically associate it with the currently highlighted parent record.</p>
+            </td>
+        </tr>
+        <tr class="process">
+            <td class="process">
+              <p>Adding a record to the parent list will only create that entry - if any child list associations need to be made, they should be added to the child list after creating the parent list record while that record is highlighted in the parent list view.  <strong>After adding a new parent record, the child list view will still be displaying records attached to the previously highlighted parent record</strong>.  Refresh the child list view by pressing the down or up arrow keys to navigate to an adjacent record and then back again:</p>
+            </td>
+        </tr>
+        <!-- Single image -->
+        <tr class="process">
+            <td class="process"><img alt="" src="images/dual5.png" style="border: 1px solid #000000;" />
+            </td>
+        </tr>
+        <tr class="process">
+            <td class="process"><em>Highlighted parent record (left) and associated child record (right)</em>
+            </td>
+        </tr>
+        <!-- Single image -->
+        <tr class="process">
+            <td class="process"><img alt="" src="images/dual6.png" style="border: 1px solid #000000;" />
+            </td>
+        </tr>
+        <tr class="process">
+            <td class="process"><em>Newly added parent record now highlighted (left), but child list view (right) still showing association with previously highlighted parent record.</em>
+            </td>
+        </tr>
+        <!-- Single image -->
+        <tr class="process">
+            <td class="process"><img alt="" src="images/dual7.png" style="border: 1px solid #000000;" />
+            </td>
+        </tr>
+        <tr class="process">
+            <td class="process"><em>Using up arrow, highlight focus moves to a different record on the parent list (left), and the child list (right) is refreshed to show this record's associations.</em>
+            </td>
+        </tr>
+        <!-- Single image -->
+        <tr class="process">
+            <td class="process"><img alt="" src="images/dual8.png" style="border: 1px solid #000000;" />
+            </td>
+        </tr>
+        <tr class="process">
+            <td class="process"><em>Moving the cursor back to the newly added parent record (left) with the down arrow, the child list view is refreshed to display a blank column.</em>
+            </td>
+        </tr>
+  
+  
+        <tr class="process">
+            <td class="process">
+              
+              <p style="font-size: 200%;">File associations - Deleting a record</p>
+            </td>
+        </tr>
+        <tr class="process">
+            <td class="process">
+              <p>Deleting a child record removes the entry and its association with a parent record.</p>
+            </td>
+        </tr>
+        <tr class="process">
+            <td class="process">
+                <div class="sticky">
+                <!-- Sticky note template -->
+                    <blockquote class="note yellow">
+                      <cite class="note-title">NOTE: </cite>
+                      Deleting a parent entry deletes both the parent <u>and any associated child records from the child list</u>.
+                    </blockquote>
+                </div>
+            </td>
+        </tr>
+  
+  
+        <tr class="process">
+            <td class="process">
+              
+              <p style="font-size: 200%;">Example - Adding a child record to a parent entry:</p>
+            </td>
+        </tr>
+        <tr class="process">
+            <td class="process">
+              <p>In the picture below, a parent record is highlighted with no associated child records:</p>
+            </td>
+        </tr>
+        <!-- Single image -->
+        <tr class="process">
+            <td class="process"><img alt="" src="images/dual9.png" style="border: 1px solid #000000;" />
+            </td>
+        </tr>
+        <tr class="process">
+            
+            <td class="process"><p>Focus is now on the empty child list (after using the bounce bar commands detailed above, or via the <strong>CTRL + TAB</strong> keyboard shortcut):</p>
+            </td>
+        </tr>
+        <!-- Single image -->
+        <tr class="process">
+            <td class="process"><img alt="" src="images/dual10.png" style="border: 1px solid #000000;" />
+            </td>
+        </tr>
+        <tr class="process">
+            
+            <td class="process"><p>After adding a record to the child list (see this document for information on navigating a detail screen/entry form), it is displayed in the child (SubClasses) list:</p>
+            </td>
+        </tr>
+        <!-- Single image -->
+        <tr class="process">
+            <td class="process"><img alt="" src="images/dual11.png" style="border: 1px solid #000000;" />
+            </td>
+        </tr>
+        <tr class="process">
+            
+            <td class="process"><p>Returning to the parent list, if the cursor moves to a different parent record, the child list will no longer display the newly added record as focus has left its associated parent entry:</p>
+            </td>
+        </tr>
+        <!-- Single image -->
+        <tr class="process">
+            <td class="process"><img alt="" src="images/dual12.png" style="border: 1px solid #000000;" />
+            </td>
+        </tr>
+        <tr class="process">
+            
+            <td class="process"><p>Moving the cursor back to the original parent record will display its newly added child record again:</p>
+            </td>
+        </tr>
+        <!-- Single image -->
+        <tr class="process">
+            <td class="process"><img alt="" src="images/dual13.png" style="border: 1px solid #000000;" />
+            </td>
+        </tr>
+  
+      </tbody>
+    </table>
+  </div>
+  
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+      acc[i].onclick = function(){
+          this.classList.toggle("active");
+          this.nextElementSibling.classList.toggle("show");
+    }
+  }
+  </script>
+
+</div>
+<br />
+<span style="display:table; margin:0 auto;"><a href="mailto:gary.keefe@jasperproducts.com?subject=M/P module - Bug Report" id="special_link">Report an issue</a> | 2016 <a href="www.jasperproducts.com" id="special_link">Jasper Products</a></span>
+<p style="margin: 24px;"></p>
+</div>
+</body>
+</html>

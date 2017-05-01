@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/jazz/HTML_Help/style.css">
+    <meta charset="utf-8">
+    <title>Changing a Price Sheet</title>
+    <script src="jquery.js"></script>
+    <script>
+       $(document).ready(function() {
+           $('[data-toggle="toggle"]').change(function(){
+               $(this).parents().next('.hide').toggle();
+           });
+       })(jQuery);
+    </script>
+    
+</head>
+
+<body>
+<div class="sidebar">
+  <span style="color: #000000">
+    <br />
+      <div style="width: 65%; display: block; margin: auto;"><a class="side-title" href="/jazz/HTML_Help/help-home.html" rel="home">Jazz Help</a></div>
+    <br />
+    <br />
+    <img class="center" src="file:///C:\Users\jtamm\Documents\My Web Sites\jazzdocs\images\jp.PNG"/>
+    <br />
+    <br />
+    <div class="container">
+      <div class="accordion" id="onsidebar" style="padding: 10px; width: 161px;"><a id="special_link" href="Change-price-sheet.html">Changing a Price Sheet</a></div><!-- edit path as needed -->      
+      <button class="accordion" id="onsidebar">Parent Directory</button>
+      <div class="panel">
+        <!-- content -->
+        <table style="margin-left: 31px; width: 181px;" cellspacing="2" cellpadding="2" border="1" width="100%">
+          <tbody>
+              <tr>
+                <td>
+                  <a id="bbarone" style="font-size: 115%; font-weight: bold;" href="SO.html">SO</a> <!-- edit href in a tag -->
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a id="bbarone" href="price-sheet-functions.html"><ul class="a">Price Sheet Functions</ul></a> <!-- edit href in a tag -->
+                </td>                                                
+              </tr>
+              <tr>
+                <td>
+                  <a id="bbarone" href="Adding-a-aprice-sheet.html"><ul class="a"><ul class="a">Adding A Price Sheet</ul></ul></a> <!-- edit href in a tag -->
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a id="bbarone" href="expiring-price-sheet.html"><ul class="a"><ul class="a">Expiring A Price Sheet</ul></ul></a> <!-- edit href in a tag -->
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a id="bbarone" href="Price-sheet-jasper-address.html"><ul class="a"><ul class="a">Entering A Price Sheet Jasper Address</ul></ul></a> <!-- edit href in a tag -->
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a id="bbarone" href="upgrading-proposal.html"><ul class="a"><ul class="a">Upgrading A Proposal To A Price Sheet</ul></ul></a> <!-- edit href in a tag -->
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a id="bbarone" href="adding-items.html"><ul class="a"><ul class="a">Adding Items To A Price Sheet</ul></ul></a> <!-- edit href in a tag -->
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a id="bbarone" href="terminology.html"><ul class="a"><ul class="a">Terminology</ul></ul></a> <!-- edit href in a tag -->
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a id="bbarone" href="change-price-sheet.html"><ul class="a"><ul class="a"><strong>Changing a Price Sheet</strong></ul></ul></a> <!-- edit href in a tag -->
+                </td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </span>
+</div>
+
+<div class="content">
+  <div  style="padding-left: 10px;">
+    <br />
+      <h1 id="heading">Changing a Price Sheet</h1>
+    <br />&nbsp;<br />
+  <p>From Price Sheet draft detail screen:</p>
+  <br />
+  <br />
+  </div>
+<div class="info">
+<table cellspacing="2" cellpadding="2" border="2" width="100%">
+    <thead>
+        <tr>
+            <th style="width: 100%;"></th> <!-- Blank line -->
+        </tr>
+    </thead>
+</table>
+
+<div style="background-color: #6fa8dc; border-left: #6fa8dc;">
+  <!-- content -->
+    <table cellspacing="2" cellpadding="2" border="1" width="100%">
+            <tbody>
+                <tr class="process">
+                    <td class="process"><p>From the bounce bar, select the Change option.</p>
+                    </td>
+                </tr>
+                <!-- Single image -->
+                <tr class="process">
+                    <td class="process"><img alt="" src="images/change-price-sheet.png" style="border: 1px solid #000000;" />
+                    </td>
+                </tr>
+                <tr class="process">
+                    <td class="process"><p>Cursor focus will be on the price sheet type radio group.</p>
+                      <ul>
+                        <li>A <strong>Draft</strong> can only be changed to a <strong>Proposal</strong>; an error message will be displayed if an attempt to change it to a Price Sheet is made.  Move the cursor from the Draft position to the Proposal position and select it by pressing the <strong>spacebar</strong>.  Press <strong>Enter</strong> and select the <strong>"Yes"</strong> option to complete the change from Draft to Proposal.  Making this selection will exit the edit screen and bring focus back to the bounce bar.
+                              <ul><div class="sticky">
+                              <!-- Sticky note template -->
+                                <blockquote class="note yellow">
+                                  <cite class="note-title">NOTE: </cite>
+                                  Selecting the "No" value will return focus to the edit screen and allow the user to change additional fields.
+                                </blockquote>
+                              </div><br><br><br><br><br><br><br><br></ul>
+                        </li>
+                      </ul>
+
+                      <ul>
+                        <li>A <strong>Proposal</strong> can either be downgraded to a <strong>Draft</strong>, or upgraded to a <strong>Price Sheet</strong>.</li>
+                        <ul>
+                          <li>To downgrade from a proposal to a draft, move the cursor from the Proposal position to the Draft position and select it with the spacebar.  Press enter and select "Yes" on the pop-up screen to complete the process.  
+                            <div class="sticky">
+                            <!-- Sticky note template -->
+                              <blockquote class="note yellow">
+                                <cite class="note-title">NOTE: </cite>
+                                Selecting "No" will return focus to the edit screen.
+                              </blockquote>
+                            </div><br><br><br><br><br><br><br><br>
+                          </li>
+                          <li>Please refer to <a href="/Jazz/HTML_Help/SO/upgrading-proposal.html">Upgrading A Proposal To A Price Sheet</a> section for specific instructions on how to upgrade from a Proposal to a Price Sheet.</li>                    
+                        </ul>
+                      </ul>
+                    </td>
+                </tr>
+                <tr class="process">
+                    <td class="process"><p>The user has the option of editing the remaining price sheet fields.  Please refer to the section on <a href="/Jazz/HTML_Help/SO/Adding-a-aprice-sheet.html">adding a Price Sheet</a> for reference.  Please note that the Ship Range fields can not be edited on an existing price sheet - if a different ship range is required please create a new sheet.</p>
+                    </td>
+                </tr>
+
+
+
+                <!-- add as many <tr>'s as needed.  Use id #'s up to field/s5 for different color backgrounds for different sections.  Add more id's if more than 6 sections are needed.  -->
+
+
+
+
+
+            </tbody>
+    </table>
+</div>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+
+</div>
+  <br />
+    <span>--Footer text + links--</span>
+  <br />&nbsp;<br />
+</div>
+</body>
+</html>

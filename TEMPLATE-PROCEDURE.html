@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>--Page Title--</title>
+    <script src="jquery.js"></script>
+    <script>
+       $(document).ready(function() {
+           $('[data-toggle="toggle"]').change(function(){
+               $(this).parents().next('.hide').toggle();
+           });
+       })(jQuery);
+    </script>
+    
+</head>
+
+<body>
+<div class="sidebar">
+  <span style="color: #000000">
+    <br />
+      <div style="width: 65%; display: block; margin: auto;"><a class="side-title" href="/jazz/HTML_Help/help-home.html" rel="home">Jazz Help</a></div>
+    <br />
+    <br />
+    <img class="center" src="file:///C:\Users\jtamm\Documents\My Web Sites\jazzdocs\images\jp.PNG"/>
+    <br />
+    <br />
+    <div class="container">
+
+
+<div class="accordion" id="onsidebar" style="padding: 10px; width: 161px;"><a id="special_link" href="path/to/current-page.html">--Current Page Title--</a></div><!-- edit path as needed -->
+
+<button class="accordion" id="onsidebar">Parent Directory</button>
+<div class="panel">
+  <!-- content -->
+    <table style="margin-left: 31px; width: 181px;" cellspacing="2" cellpadding="2" border="1" width="100%">
+            <tbody>
+                <tr>
+                  <td>
+                    <a id="bbarone" style="font-size: 115%; font-weight: bold;" href="path/to/related-page.html">--Parent Directory--</a> <!-- edit href in a tag -->
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a id="bbarone" href="path/to/related-page.html"><ul class="a">--Sub-Directory #1--</ul></a> <!-- edit href in a tag -->
+                  </td>                                                
+                </tr>                                                  
+                <tr>                                                   
+                  <td>                                                 
+                    <a id="bbarone" href="path/to/related-page.html"><ul class="a"><ul class="a">--Sub-Directory #2--</ul></ul></a> <!-- edit href in a tag, add as many sub-directories as needed -->
+                  </td>                                                
+                </tr>                                                  
+                <tr>                                                   
+                  <td>                                                 
+                    <a id="bbarone" href="path/to/related-page.html"><ul class="a"><ul class="a"> <strong>--Current Page--</strong></ul></ul></a> <!-- edit href in a tag -->
+                  </td>
+                </tr>
+            </tbody>
+    </table>
+</div>
+
+
+    </div>
+  </span>
+</div>
+
+<div class="content">
+  <div  style="padding-left: 10px;">
+    <br />
+      <h1 id="heading">--Current Page Title--</h1>
+    <br />&nbsp;<br />
+  <p>--Introductory paragraph--</p>
+  <br />
+  <br />
+  </div>
+<div class="info">
+<table cellspacing="2" cellpadding="2" border="2" width="100%">
+    <thead>
+        <tr>
+            <th style="width: 100%;"></th> <!-- Blank line -->
+        </tr>
+    </thead>
+</table>
+
+<div style="background-color: #6fa8dc; border-left: #6fa8dc;">
+  <!-- content -->
+    <table cellspacing="2" cellpadding="2" border="1" width="100%">
+            <tbody>
+                <tr class="process">
+                    <td class="process">
+                        <div class="sticky">
+                        <!-- Sticky note template -->
+                            <blockquote class="note yellow">
+                              <cite class="note-title">NOTE: </cite>
+                              --Note text--
+                            </blockquote>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="process">
+                    <td class="process"><p>--Sample text block--</p>
+                    </td>
+                </tr>
+                <!-- Dual image -->
+                <tr class="process">  <!-- For different image sizes, adjust width and height accordingly -->
+                    <td class="process"><img alt="" src="path/to/image.png" style="border: 1px solid #000000;" />
+                  &nbsp; &nbsp; &nbsp; &nbsp;<img alt="" src="path/to/image2.png" style="border: 1px solid #000000;" /><br />
+                    </td>
+                </tr>
+                <!-- Single image -->
+                <tr class="process">
+                    <td class="process"><img alt="" src="path/to/image.png" style="border: 1px solid #000000;" />
+                    </td>
+                </tr>
+
+
+
+                <!-- add as many <tr>'s as needed.  Use id #'s up to field/s5 for different color backgrounds for different sections.  Add more id's if more than 6 sections are needed.  -->
+
+
+
+
+
+            </tbody>
+    </table>
+</div>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+
+</div>
+  <br />
+    <span>--Footer text + links--</span>
+  <br />&nbsp;<br />
+</div>
+</body>
+</html>

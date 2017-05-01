@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>Keyboard Navigation In A Detail Screen</title>
+    <script src="jquery.js"></script>
+    <script>
+       $(document).ready(function() {
+           $('[data-toggle="toggle"]').change(function(){
+               $(this).parents().next('.hide').toggle();
+           });
+       })(jQuery);
+    </script>
+    
+</head>
+
+<body>
+<div class="sidebar">
+  <span style="color: #000000">
+    <br />
+      <div style="width: 65%; display: block; margin: auto;"><a class="side-title" href="/jazz/HTML_Help/help-home.html" rel="home">Jazz Help</a></div>
+    <br />
+    <br />
+    <img class="center" src="file:///C:\Users\jtamm\Documents\My Web Sites\jazzdocs\images\jp.PNG"/>
+    <br />
+    <br />
+    <div class="container">
+
+
+<div class="accordion" id="onsidebar" style="padding: 10px; width: 161px;"><a id="special_link" href="Keyboard-Detail.html">Keyboard Navigation In A Detail Screen</a></div><!-- edit path as needed -->
+
+<button class="accordion" id="onsidebar">Parent Directory</button>
+<div class="panel">
+  <!-- content -->
+    <table style="margin-left: 31px; width: 181px;" cellspacing="2" cellpadding="2" border="1" width="100%">
+      <tbody>
+                <tr>
+                  <td>
+                    <a id="bbarone" style="font-size: 115%; font-weight: bold;" href="navigating-jazz.html">Navigating Jazz</a> <!-- edit href in a tag -->
+                  </td>
+                </tr>                                                 
+                <tr>                                                   
+                  <td>                                                 
+                    <a id="bbarone" href="Keyboard-Navigation.html"><ul class="a">Keyboard Navigation</ul></a> <!-- edit href in a tag, add as many sub-directories as needed -->
+                  </td>                                                
+                </tr>
+                <tr>                                                   
+                  <td>                                                 
+                    <a id="bbarone" href="Keyboard-Single.html"><ul class="a">Keyboard Navigation In A Single List Screen</ul></a> <!-- edit href in a tag -->
+                  </td>
+                </tr>                                                 
+                <tr>                                                   
+                  <td>                                                 
+                    <a id="bbarone" href="Keyboard-Dual.html"><ul class="a">Keyboard Navigation In A Dual List Screen</ul></a> <!-- edit href in a tag, add as many sub-directories as needed -->
+                  </td>                                                
+                </tr>                                                 
+                <tr>                                                   
+                  <td>                                                 
+                    <a id="bbarone" href="Keyboard-Detail.html"><ul class="a"><strong>Keyboard Navigation In A Detail Screen</strong></ul></a> <!-- edit href in a tag, add as many sub-directories as needed -->
+                  </td>                                                
+                </tr>                                                 
+                <tr>                                                   
+                  <td>                                                 
+                    <a id="bbarone" href="Sort-Indexes.html"><ul class="a">Using Sort Indexes On A List Screen</ul></a> <!-- edit href in a tag, add as many sub-directories as needed -->
+                  </td>                                                
+                </tr>                                                 
+                <tr>                                                   
+                  <td>                                                 
+                    <a id="bbarone" href="Maintaining-supplemental-files.html"><ul class="a">Maintaining Supplemental Files</ul></a> <!-- edit href in a tag, add as many sub-directories as needed -->
+                  </td>                                                
+                </tr>                                                 
+                <tr>                                                   
+                  <td>                                                 
+                    <a id="bbarone" href="Using-Filters.html"><ul class="a">Using Filters</ul></a> <!-- edit href in a tag, add as many sub-directories as needed -->
+                  </td>                                                
+                </tr>
+      </tbody>
+    </table>
+</div>
+
+
+    </div>
+  </span>
+</div>
+
+<div class="content">
+  <div  style="padding-left: 10px;">
+    <br />
+    <h1 id="heading">Keyboard Navigation In A Detail Screen</h1>
+    <br />&nbsp;<br />
+    <p>The <strong>Detail Screen</strong> is one of the most common screen types in Jazz.  It represents a detailed, single-entry view of one record.  The screen is divided into a top display section, where all the record information is shown.  A bounce bar occupies the bottom two lines of the screen.</p>
+  </div>
+  <div class="info">
+    <table cellspacing="2" cellpadding="2" border="2" width="100%">
+      <thead>
+        <tr>
+          <th style="width: 100%;"></th> <!-- Blank line -->
+        </tr>
+      </thead>
+    </table>
+    
+    <div style="background-color: #6fa8dc; border-left: #6fa8dc;">
+      <!-- content -->
+        <table cellspacing="2" cellpadding="2" border="1" width="100%">
+          <tbody>
+            <tr class="process">
+                <td class="process">
+                  
+                  <p style="font-size: 200%;">Screen behavior and modes</p>
+                </td>
+            </tr>
+            <tr class="process">
+              <td class="process">
+                  <br />While different detail screens may have features that functions slightly differently from each other, for the most part they maintain very similar functionality.  When navigating to a detail screen (usually from a <a href="/Jazz/HTML_Help/Keyboard-Single.html">List View</a> screen), cursor focus starts on the bounce bar.  Although there may be many menu options, almost every screen will have the options to <strong>Add</strong> a new record, skip back to the <strong>Previous</strong> record, advance to the <strong>Next</strong> record, and <strong>Change</strong> or <strong>Delete</strong> an existing record.
+              </td>
+            </tr>
+            <tr class="process">
+              <td class="process">
+                  <br />Detail screens have 3 different <strong>modes</strong> - <strong>Add</strong> mode, <strong>Edit</strong> mode and <strong>Display</strong> mode.  Display mode is the default screen mode, in which the data fields show record information but cannot be edited.  Add mode brings up an empty record with editable fields, and Edit mode opens the currently displayed record up for editing by a user.
+              </td>
+            </tr>
+            <tr class="process">
+              <td class="process">
+                  <br />There are six main types of data field - the <strong>Text Field</strong>, <strong>Drop-Down Menu</strong>, <strong>Checkbox</strong>, <strong>Radio Button</strong>, <strong>Date Field</strong> and <strong>Memo pop-up</strong>.
+              </td>
+            </tr>
+            <table>
+              <tbody>
+                  <tr>
+                      <td style="color: #444444;"><strong>&nbsp;Field</strong></td>
+                      <td style="color: #444444;"><strong>Example&nbsp;</strong></td>
+                      <td style="color: #444444;"><strong>Description&nbsp;</strong></td>
+                  </tr>
+                  <tr>
+                      <td>
+                      <h2 style="color: #444444; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-align: left;"><span style="font-size: 14px;">Text Field</span></h2>
+                      </td>
+                      <td><span style="font-size: 14px;"><img alt="" src="images/detail1.png" style="color: #444444; font-family: 'Segoe UI', Arial; font-size: 13.3333px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: -webkit-left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;">&nbsp;</span></td>
+                      <td><span style="font-size: 13px; color: #444444;">Text fields are general purpose data entry fields. &nbsp;Most accept all alphanumeric characters as well as special characters, although there may be instances where the accepted data types are restricted.&nbsp;</span></td>
+                  </tr>
+                  <tr>
+                      <td>
+                      <h2 style="color: #444444; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-align: left;"><span style="font-size: 14px;"><a name="Drop-Down Menu"></a>Drop-Down Menu</span></h2>
+                      </td>
+                      <td><span style="font-size: 14px;">&nbsp;<img alt="" src="images/detail2.png" style="color: #444444; font-family: 'Segoe UI', Arial; font-size: small; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;"></span></td>
+                      <td><span style="font-size: 13px; color: #444444;">Drop-Down Menus resemble text fields with a downward-pointing arrow at the right end. &nbsp;These fields feature a navigable list of pre-selected options for the user to choose from. &nbsp;While many drop-down menus only allow data selected from the drop-down list, there are some which will accept user-typed entries as well and in these cases, in addition to providing a list of values to choose from can function in the same way as a text field.</span></td>
+                  </tr>
+                  <tr>
+                      <td>
+                      <h2 style="color: #444444; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-align: left;"><span style="font-size: 14px;">Checkbox</span></h2>
+                      </td>
+                      <td><span style="font-size: 14px;">&nbsp;<img alt="" src="images/detail3.png" style="color: #444444; font-family: 'Segoe UI', Arial; font-size: 13.3333px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: -webkit-left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;"></span></td>
+                      <td><span style="font-size: 13px; color: #444444;">Checkboxes provide 'yes' / 'no' data. &nbsp;They have two states, 'off' and 'on'.</span></td>
+                  </tr>
+                  <tr>
+                      <td>
+                      <h2 style="color: #444444; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-align: left;"><span style="font-size: 14px;">Radio Button</span></h2>
+                      </td>
+                      <td><span style="font-size: 14px;">&nbsp;<img alt="" src="images/detail4.png" style="color: #444444; font-family: 'Segoe UI', Arial; font-size: small; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: -webkit-left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;"></span></td>
+                      <td><span style="font-size: 13px; color: #444444;">A Rdio Button (or Radio Group) is a multiple-choice checkbox. &nbsp;Usually, only one choice can be selected at a time. &nbsp;Marking a second field as 'active' will automatically deactivate the first selected field.</span></td>
+                  </tr>
+                  <tr>
+                      <td>
+                      <h2 style="color: #444444; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-align: left;"><span style="font-size: 14px;">Date Field</span></h2>
+                      </td>
+                      <td><span style="font-size: 14px;">&nbsp;&nbsp;<img alt="" src="images/detail5.png"></span></td>
+                      <td><span style="font-size: 13px; color: #444444;">A date field contains calendar data, usually in the standard US <strong>mm/dd/yy </strong>format. &nbsp;Only numeric data following the accepted date format can be entered. &nbsp;In certain cases there may be restrictions on entering dates outside of a range, or before the current date. &nbsp;In these cases a pop-up message will alert the user what changes they need to make.</span></td>
+                  </tr>
+                  <tr>
+                      <td>
+                      <h2 style="color: #444444; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-align: left;"><span style="font-size: 14px;">Memo<span class="Apple-converted-space">&nbsp;</span><span style="font-size: 14px;">pop-up</span></span></h2>
+                      </td>
+                      <td>&nbsp;&nbsp;<img alt="" src="images/detail6.png"></td>
+                      <td><span style="font-size: 13px; color: #444444;">The Memo Pop-Up is a way to access and write to database <strong>Memo Fields</strong>. &nbsp;Entered data may use alphanumeric and special characters.<br>
+                      <br>
+                      Unlike a text field, memo fields are suitable for longer entries and can be formatted across multiple lines into paragraphs.</span></td>
+                  </tr>
+              </tbody>
+            </table>
+            <tr class="process">
+                <td class="process">
+                  
+                  <p style="font-size: 200%;">Keyboard commands in the Detail Screen</p>
+                </td>
+            </tr>
+            <tr class="process">
+              <td class="process">
+                  <br />Below is a table detailing keyboard commands and their behavior in different parts of the detail screen.
+              </td>
+            </tr>
+            <table>
+              <tr style="height: 21px;">
+                  <td style="padding: 2px 3px; border: 1px solid #000000; font-size: 110%; color: #000000; vertical-align: top; background-color: #ffff00;" rowspan="2" colspan="1" data-sheets-value="{'1':2,'2':'KEY'}">
+                  <div style="max-height: 61.8889px;"><strong><span style="font-size: 20px;">KEY</span></strong></div>
+                  </td>
+                  <td style="padding: 2px 3px; border-top-width: 1px; border-top-style: solid; border-top-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 110%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #ffff00;" rowspan="1" colspan="7" data-sheets-value="{'1':2,'2':'FIELD TYPE'}"><span style="font-size: 16px;">FIELD TYPE</span></td>
+              </tr>
+              <tr style="height: 21px;">
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #ffd966;" data-sheets-value="{'1':2,'2':'Bounce bar'}"><span style="font-size: 14px;">Bounce bar</span></td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #ffd966;" data-sheets-value="{'1':2,'2':'Text field'}"><span style="font-size: 14px;">Text field</span></td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #ffd966;" data-sheets-value="{'1':2,'2':'Drop-down menu'}"><span style="font-size: 14px;">Drop-down menu</span></td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #ffd966;" data-sheets-value="{'1':2,'2':'Check\nbox'}"><span style="font-size: 14px;">Checkbox</span></td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #ffd966;" data-sheets-value="{'1':2,'2':'Radio group'}"><span style="font-size: 14px;">Radio Button</span></td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 110%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #ffd966;" data-sheets-value="{'1':2,'2':'Date field'}">Date field</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 110%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #ffd966;" data-sheets-value="{'1':2,'2':'Memo pop-up'}">Memo pop-up</td>
+              </tr>
+              <tr style="height: 21px;">
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; border-left-width: 1px; border-left-style: solid; border-left-color: #000000; font-family: Arial; font-size: 140%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #f3f3f3;" data-sheets-value="{'1':2,'2':'TAB'}">TAB</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #ffffff; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #000000;" data-sheets-value="{'1':2,'2':'n/a'}">n/a</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #d9ead3;" data-sheets-value="{'1':2,'2':'Accept current state and advance to next field'}">Accept current state and advance to next field</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #d0e0e3;" data-sheets-value="{'1':2,'2':'Accept current selection and advance to next field / open drop down menu if no item select'}">Accept current selection and advance to next field / open drop down menu if no item select</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #d9d9d9;" rowspan="2" colspan="3" data-sheets-value="{'1':2,'2':'Accept current state and advance to next field'}"><span>
+                  <div style="max-height: 147.889px;">Accept current state and advance to next field</div>
+                  </span></td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #ead1dc;" data-sheets-value="{'1':2,'2':'Advance cursor by 3 spaces'}">Advance cursor by 3 spaces</td>
+              </tr>
+              <tr style="height: 21px;">
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; border-left-width: 1px; border-left-style: solid; border-left-color: #000000; font-family: Arial; font-size: 140%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #f3f3f3;" data-sheets-value="{'1':2,'2':'ENTER'}">ENTER</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #ffe599;" data-sheets-value="{'1':2,'2':'Select highlighted menu option'}">Select highlighted menu option</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #b6d7a8;" data-sheets-value="{'1':2,'2':'Advance to next entry field'}">Advance to next entry field</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #a2c4c9;" data-sheets-value="{'1':2,'2':'Open drop down menu / select highlighted menu item and advance to next field'}">Open drop down menu / select highlighted menu item and advance to next field</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #d5a6bd;" data-sheets-value="{'1':2,'2':'Carriage return - advance cursor to beginning of next line'}">Carriage return - advance cursor to beginning of next line</td>
+              </tr>
+              <tr style="height: 21px;">
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; border-left-width: 1px; border-left-style: solid; border-left-color: #000000; font-family: Arial; font-size: 140%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #f3f3f3;" data-sheets-value="{'1':2,'2':'SPACE'}">SPACE</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #ffffff; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #000000;" data-sheets-value="{'1':2,'2':'n/a'}">n/a</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #93c47d;" data-sheets-value="{'1':2,'2':'Enter blank space (where permitted)'}">Enter blank space (where permitted)</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #76a5af;" data-sheets-value="{'1':2,'2':'Open drop down menu'}">Open drop down menu</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #6d9eeb;" data-sheets-value="{'1':2,'2':'Select / de-select checkbox'}">Select / de-select checkbox</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #6fa8dc;" data-sheets-value="{'1':2,'2':'Select / de-select highlighted item'}">Select / de-select highlighted item</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #ffffff; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #000000;" data-sheets-value="{'1':2,'2':'n/a'}">n/a</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #c27ba0;" data-sheets-value="{'1':2,'2':'Advance cursor by 1 space'}">Advance cursor by 1 space</td>
+              </tr>
+              <tr style="height: 21px;">
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; border-left-width: 1px; border-left-style: solid; border-left-color: #000000; font-family: Arial; font-size: 140%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #f3f3f3;" data-sheets-value="{'1':2,'2':'ESCAPE'}">ESCAPE</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #f1c232;" data-sheets-value="{'1':2,'2':'Return to previous screen'}">Return to previous screen</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #6aa84f;" data-sheets-value="{'1':2,'2':'Abandon changes, exit detail screen and return to previous screen'}">Abandon changes, exit detail screen and return to previous screen</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #45818e;" data-sheets-value="{'1':2,'2':'Exit open drop down menu / exit detail screen and abandon changes'}">Exit open drop down menu / exit detail screen and abandon changes</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #999999;" rowspan="1" colspan="3" data-sheets-value="{'1':2,'2':'Abandon changes, exit detail screen and return to previous screen'}">Abandon changes, exit detail screen and return to previous screen</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #a64d79;" data-sheets-value="{'1':2,'2':'Abandon changes and exit to previous screen'}">Abandon changes and exit to previous screen</td>
+              </tr>
+              <tr style="height: 21px;">
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; border-left-width: 1px; border-left-style: solid; border-left-color: #000000; font-family: Arial; font-size: 140%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #f3f3f3;" data-sheets-value="{'1':2,'2':'UP ARROW'}">UP ARROW</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #ffffff; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #bf9000;" data-sheets-value="{'1':2,'2':'Previous item (where applicable)'}">Previous item (where applicable)</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #ffffff; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #38761d;" data-sheets-value="{'1':2,'2':'Return to previous field (where permitted)'}">Return to previous field (where permitted)</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #ffffff; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #134f5c;" data-sheets-value="{'1':2,'2':'Move cursor up'}">Move cursor up</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #ffffff; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #1155cc;" data-sheets-value="{'1':2,'2':'Return to previous field (where permitted)'}">Return to previous field (where permitted)</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #ffffff; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #666666;" rowspan="1" colspan="2" data-sheets-value="{'1':2,'2':'Move cursor up / return to previous field'}">Move cursor up / return to previous field</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #ffffff; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #741b47;" data-sheets-value="{'1':2,'2':'Move cursor up 1 line'}">Move cursor up 1 line</td>
+              </tr>
+              <tr style="height: 21px;">
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; border-left-width: 1px; border-left-style: solid; border-left-color: #000000; font-family: Arial; font-size: 140%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #f3f3f3;" data-sheets-value="{'1':2,'2':'DOWN ARROW'}">DOWN ARROW</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #ffffff; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #7f6000;" data-sheets-value="{'1':2,'2':'Next item (where applicable)'}">Next item (where applicable)</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #ffffff; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #274e13;" data-sheets-value="{'1':2,'2':'Accept current state and advance to next field'}">Accept current state and advance to next field</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #ffffff; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #0c343d;" data-sheets-value="{'1':2,'2':'Move cursor down'}">Move cursor down</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #ffffff; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #1c4587;" data-sheets-value="{'1':2,'2':'Accept current state and advance to next field'}">Accept current state and advance to next field</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #ffffff; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #434343;" rowspan="1" colspan="2" data-sheets-value="{'1':2,'2':'Move cursor down / accept current state and advance to next field'}">Move cursor down / accept current state and advance to next field</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #ffffff; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #4c1130;" data-sheets-value="{'1':2,'2':'Move cursor down 1 line'}">Move cursor down 1 line</td>
+              </tr>
+              <tr style="height: 21px;">
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; border-left-width: 1px; border-left-style: solid; border-left-color: #000000; font-family: Arial; font-size: 140%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #f3f3f3;" data-sheets-value="{'1':2,'2':'CTRL+W'}">CTRL+W</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #ffffff; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #000000;" rowspan="1" colspan="6" data-sheets-value="{'1':2,'2':'n/a'}">n/a</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #ffffff; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #3b0d25;" data-sheets-value="{'1':2,'2':'Save text and return to previous screen'}">Save text and return to previous screen</td>
+              </tr>
+              <tr style="height: 21px;">
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; border-left-width: 1px; border-left-style: solid; border-left-color: #000000; font-family: Arial; font-size: 140%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #f3f3f3;" data-sheets-value="{'1':2,'2':'PGUP'}">PGUP</td>
+                  <td style="padding: 2px 3px; vertical-align: bottom; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; background-color: #000000;" rowspan="2" colspan="1"><span>
+                  <div style="max-height: 65.6667px;"></div>
+                  </span></td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #ffffff; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #1b360d;" rowspan="2" colspan="1" data-sheets-value="{'1':2,'2':'Automatically complete and save form using default values'}"><span>
+                  <div style="max-height: 65.6667px;">Automatically complete and save form using default values</div>
+                  </span></td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #ffffff; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #08262d;" data-sheets-value="{'1':2,'2':'Skip to first item in drop-down menu'}">Skip to first item in drop-down menu</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #ffffff; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #2d2d2d;" rowspan="2" colspan="3" data-sheets-value="{'1':2,'2':'Automatically complete and save form using default values'}"><span>
+                  <div style="max-height: 65.6667px;">Automatically complete and save form using default values</div>
+                  </span></td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #ffffff; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #2a091a;" data-sheets-value="{'1':2,'2':'Skip to top of memo'}">Skip to top of memo</td>
+              </tr>
+              <tr style="height: 21px;">
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; border-left-width: 1px; border-left-style: solid; border-left-color: #000000; font-family: Arial; font-size: 140%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #f3f3f3;" data-sheets-value="{'1':2,'2':'PGDN'}">PGDN</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #ffffff; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #061c21;" data-sheets-value="{'1':2,'2':'Skip to last item in drop-down menu'}">Skip to last item in drop-down menu</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #ffffff; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #230715;" data-sheets-value="{'1':2,'2':'Skip to bottom of memo'}">Skip to bottom of memo</td>
+              </tr>
+              <tr style="height: 21px;">
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; border-left-width: 1px; border-left-style: solid; border-left-color: #000000; font-family: Arial; font-size: 140%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #f3f3f3;" data-sheets-value="{'1':2,'2':'INSERT'}">INSERT</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #ffffff; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #604800;" data-sheets-value="{'1':2,'2':'Add a new file (same as selecting the \'Add\' option from the bounce bar)'}">Add a new file (same as selecting the "Add" option from the bounce bar)</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #ffffff; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #142909;" data-sheets-value="{'1':2,'2':'Toggle overwrite mode on and off'}">Toggle overwrite mode on and off</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #ffffff; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #000000;" data-sheets-value="{'1':2,'2':'n/a'}">n/a</td>
+                  <td style="padding: 2px 3px; vertical-align: bottom; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; background-color: #000000;"></td>
+                  <td style="padding: 2px 3px; vertical-align: bottom; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; background-color: #000000;"></td>
+                  <td style="padding: 2px 3px; vertical-align: bottom; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; background-color: #000000;"></td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #ffffff; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #14040c;" data-sheets-value="{'1':2,'2':'Toggle overwrite mode on and off'}">Toggle overwrite mode on and off</td>
+              </tr>
+              <tr style="height: 21px;">
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; border-left-width: 1px; border-left-style: solid; border-left-color: #000000; font-family: Arial; font-size: 140%; font-weight: bold; color: #000000; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #f3f3f3;" data-sheets-value="{'1':2,'2':'DELETE'}">DELETE</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #ffffff; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #423100;" data-sheets-value="{'1':2,'2':'Delete currently selected file (same as selecting \'Delete\' from the bounce bar)'}">Delete currently selected file (same as selecting "Delete" from the bounce bar)</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #ffffff; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #0b1705;" data-sheets-value="{'1':2,'2':'Delete entered text'}">Delete entered text</td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #ffffff; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #041216;" data-sheets-value="{'1':2,'2':'Delete characters of currently selected item'}">Delete characters of currently selected item</td>
+                  <td style="padding: 2px 3px; vertical-align: bottom; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; background-color: #000000;"></td>
+                  <td style="padding: 2px 3px; vertical-align: bottom; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; background-color: #000000;"></td>
+                  <td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: #000000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; font-family: Arial; font-size: 90%; font-weight: bold; color: #ffffff; white-space: normal; word-wrap: break-word; vertical-align: top; background-color: #1d1d1d;" rowspan="1" colspan="2" data-sheets-value="{'1':2,'2':'Delete entered text'}">Delete entered text</td>
+              </tr>
+            </table>             
+          </tbody>
+        </table>
+    </div>
+    
+    
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function(){
+            this.classList.toggle("active");
+            this.nextElementSibling.classList.toggle("show");
+      }
+    }
+    </script>
+
+</div>
+  <br />
+    <span>--Footer text + links--</span>
+  <br />&nbsp;<br />
+</div>
+</body>
+</html>

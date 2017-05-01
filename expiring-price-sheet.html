@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/jazz/HTML_Help/style.css">
+    <meta charset="utf-8">
+    <title>Expiring a Price Sheet</title>
+    <script src="jquery.js"></script>
+    <script>
+       $(document).ready(function() {
+           $('[data-toggle="toggle"]').change(function(){
+               $(this).parents().next('.hide').toggle();
+           });
+       })(jQuery);
+    </script>
+    
+</head>
+
+<body>
+<div class="sidebar">
+  <span style="color: #000000">
+    <br />
+      <div style="width: 65%; display: block; margin: auto;"><a class="side-title" href="/jazz/HTML_Help/help-home.html" rel="home">Jazz Help</a></div>
+    <br />
+    <br />
+    <img class="center" src="file:///C:\Users\jtamm\Documents\My Web Sites\jazzdocs\images\jp.PNG"/>
+    <br />
+    <br />
+    <div class="container">
+
+
+<div class="accordion" id="onsidebar" style="padding: 10px; width: 161px;"><a id="special_link" href="expiring-price-sheet.html">Expiring a Price Sheet</a></div><!-- edit path as needed -->
+
+<button class="accordion" id="onsidebar">Parent Directory</button>
+<div class="panel">
+  <!-- content -->
+    <table style="margin-left: 31px; width: 181px;" cellspacing="2" cellpadding="2" border="1" width="100%">
+            <tbody>
+              <tr>
+                <td>
+                  <a id="bbarone" style="font-size: 115%; font-weight: bold;" href="SO.html">SO</a> <!-- edit href in a tag -->
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a id="bbarone" href="price-sheet-functions.html"><ul class="a">Price Sheet Functions</ul></a> <!-- edit href in a tag -->
+                </td>                                                
+              </tr>
+              <tr>
+                <td>
+                  <a id="bbarone" href="Adding-a-aprice-sheet.html"><ul class="a"><ul class="a">Adding A Price Sheet</ul></ul></a> <!-- edit href in a tag -->
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a id="bbarone" href="expiring-price-sheet.html"><ul class="a"><ul class="a"><strong>Expiring A Price Sheet</strong></ul></ul></a> <!-- edit href in a tag -->
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a id="bbarone" href="Price-sheet-jasper-address.html"><ul class="a"><ul class="a">Entering A Price Sheet Jasper Address</ul></ul></a> <!-- edit href in a tag -->
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a id="bbarone" href="upgrading-proposal.html"><ul class="a"><ul class="a">Upgrading A Proposal To A Price Sheet</ul></ul></a> <!-- edit href in a tag -->
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a id="bbarone" href="adding-items.html"><ul class="a"><ul class="a">Adding Items To A Price Sheet</ul></ul></a> <!-- edit href in a tag -->
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a id="bbarone" href="terminology.html"><ul class="a"><ul class="a">Terminology</ul></ul></a> <!-- edit href in a tag -->
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a id="bbarone" href="change-price-sheet.html"><ul class="a"><ul class="a">Changing a Price Sheet</ul></ul></a> <!-- edit href in a tag -->
+                </td>
+              </tr>
+            </tbody>
+    </table>
+</div>
+
+
+    </div>
+  </span>
+</div>
+
+<div class="content">
+  <div  style="padding-left: 10px;">
+    <br />
+      <h1 id="heading">Expiring a Price Sheet</h1>
+    <br />&nbsp;<br />
+  <p>Expiring a Price Sheet automatically changes the expiration date to the current date.</p>
+  <br />
+  <br />
+  </div>
+<div class="info">
+<table cellspacing="2" cellpadding="2" border="2" width="100%">
+    <thead>
+        <tr>
+            <th style="width: 100%;"></th> <!-- Blank line -->
+        </tr>
+    </thead>
+</table>
+
+<div style="background-color: #6fa8dc; border-left: #6fa8dc;">
+  <!-- content -->
+    <table cellspacing="2" cellpadding="2" border="1" width="100%">
+            <tbody>
+                <tr class="process">
+                    <td class="process"><p>Make sure that the price sheet you wish to expire is displayed, and select the <strong>Expire</strong> bounce bar menu option.</p>
+                    </td>
+                </tr>
+                <!-- Single image -->
+                <tr class="process">
+                    <td class="process"><img alt="" src="images/expire1.png" style="border: 1px solid #000000;" />
+                    </td>
+                </tr>
+                <tr class="process">
+                    <td class="process"><p>Select <strong>"Yes"</strong> to confirm the expiration.  Selecting "No" or pressing the escape key will cancel the expiration process and return to the previous screen.</p>
+                    </td>
+                </tr>
+                <!-- Single image -->
+                <tr class="process">
+                    <td class="process"><img alt="" src="images/expire2.png" style="border: 1px solid #000000;" />
+                    </td>
+                </tr>
+                <tr class="process">
+                    <td class="process"><p>A pop-up message will display to confirm that the sheet has now been expired.  Press <strong>enter</strong> to complete the process.</p>
+                    </td>
+                </tr>
+                <!-- Single image -->
+                <tr class="process">
+                    <td class="process"><img alt="" src="images/expire3.png" style="border: 1px solid #000000;" />
+                    </td>
+                </tr>
+
+                <!-- add as many <tr>'s as needed.  Use id #'s up to field/s5 for different color backgrounds for different sections.  Add more id's if more than 6 sections are needed.  -->
+
+
+
+
+
+            </tbody>
+    </table>
+</div>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+
+</div>
+  <br />
+    <span>--Footer text + links--</span>
+  <br />&nbsp;<br />
+</div>
+</body>
+</html>

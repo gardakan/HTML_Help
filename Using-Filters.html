@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>Using Filters</title>
+    <script src="jquery.js"></script>
+    <script>
+       $(document).ready(function() {
+           $('[data-toggle="toggle"]').change(function(){
+               $(this).parents().next('.hide').toggle();
+           });
+       })(jQuery);
+    </script>
+    
+</head>
+
+<body>
+<div class="sidebar">
+  <span style="color: #000000">
+    <br />
+      <div style="width: 65%; display: block; margin: auto;"><a class="side-title" href="/jazz/HTML_Help/help-home.html" rel="home">Jazz Help</a></div>
+    <br />
+    <br />
+    <img class="center" src="file:///C:\Users\jtamm\Documents\My Web Sites\jazzdocs\images\jp.PNG"/>
+    <br />
+    <br />
+    <div class="container">
+
+
+<div class="accordion" id="onsidebar" style="padding: 10px; width: 161px;"><a id="special_link" href="Using-Filters.html">Using Filters</a></div><!-- edit path as needed -->
+
+<button class="accordion" id="onsidebar">Parent Directory</button>
+<div class="panel">
+  <!-- content -->
+    <table style="margin-left: 31px; width: 181px;" cellspacing="2" cellpadding="2" border="1" width="100%">
+            <tbody>
+                <tr>
+                  <td>
+                    <a id="bbarone" style="font-size: 115%; font-weight: bold;" href="navigating-jazz.html">Navigating Jazz</a> <!-- edit href in a tag -->
+                  </td>
+                </tr>                                                 
+                <tr>                                                   
+                  <td>                                                 
+                    <a id="bbarone" href="Keyboard-Navigation.html"><ul class="a">Keyboard Navigation</ul></a> <!-- edit href in a tag, add as many sub-directories as needed -->
+                  </td>                                                
+                </tr>
+                <tr>                                                   
+                  <td>                                                 
+                    <a id="bbarone" href="Keyboard-Single.html"><ul class="a">Keyboard Navigation In A Single List Screen</ul></a> <!-- edit href in a tag -->
+                  </td>
+                </tr>                                                 
+                <tr>                                                   
+                  <td>                                                 
+                    <a id="bbarone" href="Keyboard-Dual.html"><ul class="a">Keyboard Navigation In A Dual List Screen</ul></a> <!-- edit href in a tag, add as many sub-directories as needed -->
+                  </td>                                                
+                </tr>                                                 
+                <tr>                                                   
+                  <td>                                                 
+                    <a id="bbarone" href="Keyboard-Detail.html"><ul class="a">Keyboard Navigation In A Detail Screen</ul></a> <!-- edit href in a tag, add as many sub-directories as needed -->
+                  </td>                                                
+                </tr>                                                 
+                <tr>                                                   
+                  <td>                                                 
+                    <a id="bbarone" href="Sort-Indexes.html"><ul class="a">Using Sort Indexes On A List Screen</ul></a> <!-- edit href in a tag, add as many sub-directories as needed -->
+                  </td>                                                
+                </tr>                                                 
+                <tr>                                                   
+                  <td>                                                 
+                    <a id="bbarone" href="Maintaining-supplemental-files.html"><ul class="a">Maintaining Supplemental Files</ul></a> <!-- edit href in a tag, add as many sub-directories as needed -->
+                  </td>                                                
+                </tr>                                                 
+                <tr>                                                   
+                  <td>                                                 
+                    <a id="bbarone" href="Using-Filters.html"><ul class="a"><strong>Using Filters</strong></ul></a> <!-- edit href in a tag, add as many sub-directories as needed -->
+                  </td>                                                
+                </tr>
+            </tbody>
+    </table>
+</div>
+
+
+    </div>
+  </span>
+</div>
+
+<div class="content">
+  <div  style="padding-left: 10px;">
+    <br />
+      <h1 id="heading">Using Filters</h1>
+    <br />&nbsp;<br />
+  <p>
+  Filters are a way recall data based on a specific set of criteria.  This guide describes the basic procedure for using filters the way they are implemented throughout Jazz.</p>
+  <br />
+  <br />
+  </div>
+<div class="info">
+<table cellspacing="2" cellpadding="2" border="2" width="100%">
+    <thead>
+        <tr>
+            <th style="width: 100%;"></th> <!-- Blank line -->
+        </tr>
+    </thead>
+</table>
+
+<div style="background-color: #6fa8dc; border-left: #6fa8dc;">
+  <!-- content -->
+    <table cellspacing="2" cellpadding="2" border="1" width="100%">
+            <tbody>
+                <tr class="process">
+                    <td class="process">
+                        <div class="sticky">
+                        <!-- Sticky note template -->
+                            <blockquote class="note yellow">
+                              <cite class="note-title">NOTE: </cite>
+                              This guide assumes the user is familiar with <a href="Keyboard-detail.html">basic keyboard navigation in a detail screen</a>.
+                            </blockquote>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="process">
+                    <td class="process"><p>Filters are used to narrow the displayed data based on selected criteria.  Filters are accessed via the bounce bar on a list screen.-</p>
+                    </td>
+                </tr>
+                <!-- Single image -->
+                <tr class="process">
+                    <td class="process"><img alt="" src="images/filter/filter1.png" style="border: 1px solid #000000;" />
+                    </td>
+                </tr>
+                <tr class="process">
+                    <td class="process"><p><em>Highlighted filter option</em></p>
+                    </td>
+                </tr>
+                <tr class="process">
+                    <td class="process"><p>Selecting the <strong>Filter</strong> option opens a grey pop-up window with various fields (typically <strong>drop-down menus</strong> and <strong>checkboxes</strong>) with criteria to use when searching for records.  Select the fields you wish to search against and de-select the fields you wish to omit:</p>
+                    </td>
+                </tr>
+                <!-- Single image -->
+                <tr class="process">
+                    <td class="process"><img alt="" src="images/filter/filter2.png" style="border: 1px solid #000000;" />
+                    </td>
+                </tr>
+                <tr class="process">
+                    <td class="process"><p>...and complete setting up the filter criteria by pressing enter when the cursor focus is on the Filter command at the bottom of the screen, after the last field on the filter form:</p>
+                    </td>
+                </tr>
+                <!-- Single image -->
+                <tr class="process">
+                    <td class="process"><img alt="" src="images/filter/filter3.png" style="border: 1px solid #000000;" />
+                    </td>
+                </tr>
+                <tr class="process">
+                    <td class="process"><p>This will re-display the list view screen only with records matching the entered search criteria.</p>
+                    </td>
+                </tr>
+                <!-- Single image -->
+                <tr class="process">
+                    <td class="process"><img alt="" src="images/filter/filter4.png" style="border: 1px solid #000000;" />
+                    </td>
+                </tr>
+                <tr class="process">
+                    <td class="process"><p>Selecting the Filter option again from the bounce bar will re-open the filter edit screen with the last active search criteria still selected (unless entering the screen after a reboot, in which case the default search criteria are selected).  The filter criteria can be modified as often as is necessary, and will not impact the data it is searching.</p>
+                    </td>
+                </tr>
+
+
+
+                <!-- add as many <tr>'s as needed.  Use id #'s up to field/s5 for different color backgrounds for different sections.  Add more id's if more than 6 sections are needed.  -->
+
+
+
+
+
+            </tbody>
+    </table>
+</div>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+
+</div>
+  <br />
+    <span>--Footer text + links--</span>
+  <br />&nbsp;<br />
+</div>
+</body>
+</html>

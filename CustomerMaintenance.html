@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/jazz/HTML_Help/style.css">
+    <meta charset="utf-8">
+    <title>Customer Maintenance</title>
+    <script src="jquery.js"></script>
+    <script>
+       $(document).ready(function() {
+           $('[data-toggle="toggle"]').change(function(){
+               $(this).parents().next('.hide').toggle();
+           });
+       })(jQuery);
+    </script>
+    
+</head>
+
+<body>
+<div class="sidebar">
+  <span style="color: #000000">
+    <br />
+      <div style="width: 65%; display: block; margin: auto;"><a class="side-title" href="/jazz/HTML_Help/help-home.html" rel="home">Jazz Help</a></div>
+    <br />
+    <br />
+    <img class="center" src="file:///C:\Users\jtamm\Documents\My Web Sites\jazzdocs\images\jp.PNG"/>
+    <br />
+    <br />
+    <div class="container">
+
+
+<div class="accordion" id="onsidebar" style="padding: 10px; width: 161px;"><a id="special_link" href="CustomerMaintenance.html">Customer Maintenance</a></div>
+
+<button class="accordion" id="onsidebar">Bounce Bar Options</button>
+<div class="panel">
+  <!-- content -->
+    <table style="margin-left: 31px; width: 181px;" cellspacing="2" cellpadding="2" border="1" width="100%">
+            <tbody>
+                <tr>
+                  <td>
+                    <a id="bbarone" href="">Next</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a id="bbarone" href="">Previous</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a id="bbarone" href="">Add</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a id="bbarone" href="">Search</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a id="bbarone" href="">Change</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a id="bbarone" href="">Comments</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a id="bbarone" href="">Notes</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a id="bbarone" href="">Ship To</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a id="bbarone" href="">Related To</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a id="bbarone" href="">Contacts</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a id="bbarone" href="">Call Tracking</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a id="bbarone" href="">Properties</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a id="bbarone" href="">Delete</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a id="bbarone" href="">Production</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a id="bbarone" href="">History</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a id="bbarone" href="">Return</a>
+                  </td>
+                </tr>
+            </tbody>
+    </table>
+</div>
+
+
+<button class="accordion" id="onsidebar">Parent Directory</button>
+<div class="panel">
+  <!-- content -->
+    <table style="margin-left: 31px; width: 181px;" cellspacing="2" cellpadding="2" border="1" width="100%">
+            <tbody>
+                <tr>
+                  <td>
+                    <a id="bbarone" style="font-size: 115%; font-weight: bold;" href="SO.html">SO</a> <!-- edit href in a tag -->
+                  </td>
+                </tr>                                                 
+                <tr>                                                   
+                  <td>                                                 
+                    <a id="bbarone" href="customer-functions.html"><ul class="a">Customer Functions</ul></a> <!-- edit href in a tag, add as many sub-directories as needed -->
+                  </td>                                                
+                </tr>
+                <tr>                                                   
+                  <td>                                                 
+                    <a id="bbarone" href="CustomerMaintenance.html"><ul class="a"><ul class="a"><strong>Customer Maintenance</strong></ul></ul></a> <!-- edit href in a tag -->
+                  </td>
+                </tr>
+            </tbody>
+    </table>
+</div>
+
+
+    </div>
+  </span>
+</div>
+
+<div class="content">
+  <div  style="padding-left: 10px;">
+    <br />
+      <h1 id="heading">Customer Maintenance</h1>
+    <br />&nbsp;<br />
+  <br />
+  This document assumes familiarity with basic Detail Screen navigation. &nbsp;Please refer to the <a id="special_link" href="keyboard_navigation_in_a_detail_screen.html">Detail Screen page</a> for more information about keyboard commands and common concepts.<br />
+  <br />
+  The <a id="special_link" href="">Customer Maintenance</a> screen shows detailed information about Jasper Product's customers. &nbsp;Below is a description of some of the data fields including their place in the context of the Jasper Products sales cycle.<br />
+  <br />
+  </div>
+<div class="info">
+<table cellspacing="2" cellpadding="2" border="1" width="100%">
+    <thead>
+        <tr>
+            <th style="width: 11.76%;">Field</th>
+            <th style="width: 17.65%;">Field Type</th>
+            <th style="width: 35.29%;">Description</th>
+            <th style="width: 35.29%;">Use In Jazz</th>
+        </tr>
+    </thead>
+</table>
+<button class="accordion">Contact Details</button>
+<div class="panel">
+  <!-- content -->
+    <table cellspacing="2" cellpadding="2" border="1" width="100%">
+            <tbody>
+                <tr>
+                    <td id="field1">Remit To</td>
+                    <td id="fields1" style="font-weight: bold; width: 17.65%;">Drop-Down Menu</td>
+                    <td id="fields1">Remit To refers to the Jasper Products return address (address to send payment/correspondence/shipments etc).</td>
+                    <td id="fields1">Remit to address is needed for printing invoices, sales orders and credit memos.</td>
+                </tr>
+                <tr>
+                    <td id="field1">Send Invoice</td>
+                    <td id="fields1" style="font-weight: bold; width: 17.65%;">Drop-Down Menu</td>
+                    <td id="fields1">This field describes the preferred method of invoicing the customer. The options are Fax, Phone, Web, Email, US Mail, and Overnight.</td>
+                    <td id="fields1">The Send Invoice field is only used in the customer detail screen.</td>
+                </tr>
+            </tbody>
+    </table>
+</div>
+
+<button class="accordion">Shipping and Billing</button>
+<div class="panel">
+    <table cellspacing="2" cellpadding="2" border="1" width="100%">
+        <tbody>
+            <tr>
+                <td id="field2">Ship Via</td>
+                <td id="fields2" style="font-weight: bold; width: 17.65%;">Drop-Down Menu</td>
+                <td id="fields2">Used to determine appropriate shipping method for orders. This information is used in many parts of Jazz, including EDI (Electronic Data Interchange) functions (data taken from EDI file), sales order consolidation, truck booking, prepay and bill (company prepays), sales order creation, printing invoices/memos/sales orders, and updating invoices.</td>
+                <td id="fields2">Ship Via data is used in Sales Order/Order Planning/Invoice/credit Memo maintenance.</td>
+            </tr>
+            <tr>
+                <td id="field2">FOB</td>
+                <td id="fields2" style="font-weight: bold; width: 17.65%;">Drop-Down Menu</td>
+                <td id="fields2">Freight on Board – determines way in which orders are shipped/picked up, whether customer or JP is responsible for shipping. The two main options are DEL, or Delivery, and OD, or Our Dock. DEL clients have finished goods delivered to them, and the responsibility to arrange and cover shipping costs falls to Jasper Products. OD clients are responsible for the scheduling and cost of arranging shipping to pick the finished goods from the Jasper Products dock.</td>
+                <td id="fields2">FOB data is used in many shipping and order processing functions throughout Jazz, such as Truck Booking, order invoicing, pallet ID's/Bills of Lading and Credit Memos. </td>
+            </tr>
+            <tr>
+                
+                <td id="field2">Type</td>
+                <td id="fields2" style="font-weight: bold; width: 17.65%;">Drop-Down Menu</td>
+                <td id="fields2">This field describes the nature of the type of business carried out by the customer.</td>
+                <td id="fields2">The customer type is only used in the customer detail screen, though the list of available customer types can be edited via the Customer Types menu option in the Customer Functions submenu.</td>
+            </tr>
+            <tr>
+                
+                <td id="field2">Price List</td>
+                <td id="fields2" style="font-weight: bold; width: 17.65%;">Drop-Down Menu</td>
+                <td id="fields2">A Price List is a customer-specific list of available products and pricing.  They can be tailored to suit individual client needs.  Please see section on <a href="">adding a Price Sheet</a> for additional details.</td>
+                <td id="fields2"><span>Price List data displayed in the drop-down menu is a list of available price sheets by price sheet code number.</span><br />&nbsp;<br />
+
+                  <span>Price Sheets can be added, edited or deleted by following <a href="">these instructions</a>. The codes are also needed for <a href="">attaching items to a price list</a>, and for running a Price Sheet Overview report.</span></td>
+            </tr>
+            <tr>
+                
+                <td id="field2">Upcharge %</td>
+                <td id="fields2" style="font-weight: bold; width: 17.65%;">Numeric text field.</td>
+                <td id="fields2">This is a % consolidation fee/freight upcharge percentage.</td>
+                <td id="fields2">Upcharge % data is used in invoicing functions, including Prepay and Bill and Voucher posting.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<button class="accordion">Terms</button>
+<div class="panel">
+    <table cellspacing="2" cellpadding="2" border="1" width="100%">
+        <tbody>
+            <tr>
+                <!-- row 1, repeat as necessary -->
+                <td id="field3">Net Due Days</td>
+                <td id="fields3" style="font-weight: bold; width: 17.65%;">Numeric text field.</td>
+                <td id="fields3">The number of days in which a customer has to pay in full.</td>
+                <td id="fields3">This data is used for various invoicing functions, including calculating whether a customer is on credit hold, keeping track of overdue invoices, and displaying the order terms on the customer display screen. </td>
+            </tr>
+            <tr>
+                <!-- row 2, repeat as necessary -->
+                <td id="field3">Paymnt Days</td>
+                <td id="fields3" style="font-weight: bold; width: 17.65%;">Numeric text field.</td>
+                <td id="fields3">The number of days alotted for a discounted payment.</td>
+                <td id="fields3">This data is used to help calculate discount payments, which is used in printing invoices, credit memos, vouchers and cash receipts, as well as for displaying the order terms on the customer detail screen. </td>
+            </tr>
+
+            <tr>
+                <!-- row 1, repeat as necessary -->
+                <td id="field3">Paymnt Disc</td>
+                <td id="fields3" style="font-weight: bold; width: 17.65%;">Numeric text field.</td>
+                <td id="fields3">Payment discount percentage for paying within the time frame specified in the Paymnt Days field.</td>
+                <td id="fields3">This data is used to calculate discount amounts, and is used when creating orders, printing invoices, receipts and credit memos, as well as in displaying order terms on the customer detail screen.</td>
+            </tr>
+            <tr>
+                <!-- row 2, repeat as necessary -->
+                <td id="field3">Sales Tax</td>
+                <td id="fields3" style="font-weight: bold; width: 17.65%;">Numeric text field.</td>
+                <td id="fields3">The percentage sales tax to add to customer orders.</td>
+                <td id="fields3">The sales tax is used when creating customer orders.</td>
+            </tr>
+            <tr>
+                <!-- row 1, repeat as necessary -->
+                <td id="field3">Fin Chg</td>
+                <td id="fields3" style="font-weight: bold; width: 17.65%;">Numeric text field.</td>
+                <td id="fields3">Percentage charged on past due amounts.</td>
+                <td id="fields3">This data is only used in the customer detail screen.</td>
+            </tr>
+            <tr>
+                <!-- row 2, repeat as necessary -->
+                <td id="field3">Terms</td>
+                <td id="fields3" style="font-weight: bold; width: 17.65%;">Drop-Down Menu / Alphanumeric text field</td>
+                <td id="fields3"><span>Depending on the values entered into the <strong>Net Due Days</strong>, <strong>Paymnt Days</strong>, and <strong>Paymnt Disc</strong> fields, the Terms field will display differently.</span><br />&nbsp;<br />
+<span>If no value was entered for the number of <strong>Net Due Days</strong> or the amount entered was 0, and the <strong>Paymnt Disc</strong> field is 0, a popup box will prompt you to enter the terms from a drop down menu:</span><br />&nbsp;<br />
+              <img class="WACImage SCX108903567" alt="Image" src="data:image/png;base64,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" style="font-family: 'Segoe UI',Tahoma,Verdana,sans-serif; font-size: 8px; margin: 0px; padding: 0px; -moz-user-select: text; border: medium none; width: 240px; height: 123px;" /><br />&nbsp;<br />
+<span>If no value was entered for the number of <strong>Net Due Days</strong> or the amount entered was 0, and the <strong>Paymnt Disc</strong> field is greater than 0, a popup box will prompt you to enter the percentage terms from a drop down menu:</span><br />&nbsp;<br />
+              <img class="WACImage SCX108903567" alt="Image" src="data:image/png;base64,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" style="color: #000000; font-family: 'Segoe UI',Tahoma,Verdana,sans-serif; font-size: 8px; margin: 0px; padding: 0px; -moz-user-select: text; border: medium none; width: 234px; height: 117px;" /><br />&nbsp;<br />
+              <span>If the number of <strong>Paymnt Days</strong> is greater than 0 and the <strong>Paymnt Disc</strong> field is greater than 0, the field will display in the format of</span><br />&nbsp;<br />
+              <span class="NormalTextRun SCX108903567" xml:lang="EN-US" style="font-size: 11pt; line-height: 20px; margin: 0px; padding: 0px; -moz-user-select: text; background-color: inherit; font-family: 'Segoe UI',sans-serif; color: #444444;" lang="EN-US">"</span><span class="NormalTextRun SCX108903567" xml:lang="EN-US" style="font-size: 11pt; font-weight: bold; line-height: 17px; margin: 0px; padding: 0px; -moz-user-select: text; background-color: inherit; font-family: 'Courier New',monospace; color: #ff0000;" lang="EN-US">&lt;payment discount percentage&gt;% &lt;no. of days allotted for discounted payment&gt;, &lt;no. of net due days&gt; Days</span><span class="NormalTextRun SCX108903567" xml:lang="EN-US" style="font-size: 11pt; line-height: 20px; margin: 0px; padding: 0px; -moz-user-select: text; background-color: inherit; font-family: 'Segoe UI',sans-serif; color: #444444;" lang="EN-US">":</span><br />&nbsp;<br />
+              <img class="WACImage SCX108903567" alt="Image" src="data:image/png;base64,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" style="font-family: 'Segoe UI',Tahoma,Verdana,sans-serif; color: #000000; font-size: 8px; margin: 0px; padding: 0px; -moz-user-select: text; border: medium none; width: 231px; height: 51px;" /><br />&nbsp;<br />
+              <span>If the number of <strong>Paymnt Days</strong> is equal to 0 and the <strong>Paymnt Disc</strong> field is greater than 0, the field will display in the format of</span><br />&nbsp;<br />
+              "</span><span class="NormalTextRun SCX108903567" xml:lang="EN-US" style="font-size: 11pt; font-weight: bold; line-height: 17px; margin: 0px; padding: 0px; -moz-user-select: text; background-color: inherit; font-family: 'Courier New',monospace; color: #ff0000;" lang="EN-US">&lt;payment discount percentage&gt;% Net, &lt;no. of net due days&gt; Days</span><span class="NormalTextRun SCX108903567" xml:lang="EN-US" style="font-size: 11pt; line-height: 20px; margin: 0px; padding: 0px; -moz-user-select: text; background-color: inherit; font-family: 'Segoe UI',sans-serif; color: #444444;" lang="EN-US">":</span><br />&nbsp;<br />
+       
+              <img class="WACImage SCX108903567" alt="Image" src="data:image/png;base64,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" style="color: #000000; font-family: 'Segoe UI',Tahoma,Verdana,sans-serif; font-size: 8px; margin: 0px; padding: 0px; -moz-user-select: text; border: medium none; width: 239px; height: 53px;" /><br />&nbsp;<br />             
+              <span>NOTE: The <strong>Terms</strong> field can be overwritten with a custom note if applicable</span><br />&nbsp;<br />
+              </td>
+                <td id="fields3">The terms are displayed when creating an order, and is displayed on invoices, receipts and reports.</td>
+            </tr>
+            <tr>
+                <!-- row 1, repeat as necessary -->
+                <td id="field3">Credit Limit</td>
+                <td id="fields3" style="font-weight: bold; width: 17.65%;">Numeric text field.</td>
+                <td id="fields3">The credit limit is the maximum unpaid balance allowed for the customer.</td>
+                <td id="fields3">The credit limit is used in calculating customer financials, which includes displaying available credit when performing sales order line item pricing or checking whether a customer is on credit hold when creating an order, and displaying credit info when making collection calls.</td>
+            </tr>
+            <tr>
+                <!-- row 2, repeat as necessary -->
+                <td id="field3">Limit Date</td>
+                <td id="fields3" style="font-weight: bold; width: 17.65%;">Date field</td>
+                <td id="fields3">This field is the date at which the credit limit expires.</td>
+                <td id="fields3">Credit limit expiration date is checked when pricing sales order line items and when creating a customer order.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<button class="accordion">Customer Sales Details</button>
+<div class="panel">
+    <table cellspacing="2" cellpadding="2" border="1" width="100%">
+        <tbody>
+            <tr>
+                <td id="field4">Full pallets only</td>
+                <td id="fields4" style="font-weight: bold; width: 17.65%;">Checkbox</td>
+                <td id="fields4">Check this box if only full pallet orders can be shipped to the customer</td>
+                <td id="fields4">This data is only used in the customer detail screen.</td>
+            </tr>
+            <tr>
+                <td id="field4">Ship on Hold</td>
+                <td id="fields4" style="font-weight: bold; width: 17.65%;">Checkbox</td>
+                <td id="fields4">Check this box if finished goods on Q/A hold can be shipped to the customer.</td>
+                <td id="fields4"><span>The Ship on Hold data is used for maintaining system Ship-Tos.  This checkbox, along with a similar value from the Ship To address information and a valid email address are required to permit a ship-on-hold.</span><br />&nbsp;<br />
+
+                  <span>These values are checked when scanning a Pallet ID and setting up a BOL.</span>
+               </td>
+            </tr>
+            <tr>
+                <td id="field4">Email BOL</td>
+                <td id="fields4" style="font-weight: bold; width: 17.65%;">Checkbox</td>
+                <td id="fields4">Check this box if the Bill Of Lading is to be emailed to the customer.</td>
+                <td id="fields4">This data is included in the customer contact info, and is checked by the system for automatic sending of an advance shipping notice/BOL.</td>
+            </tr>
+            <tr>
+                <td id="field4">Inactive</td>
+                <td id="fields4" style="font-weight: bold; width: 17.65%;">Checkbox</td>
+                <td id="fields4">Check this box if the customer is no longer an active Jasper Products customer.</td>
+                <td id="fields4">This value is used to filter out inactive customers from searches, and to prevent orders from being placed to customers who are no longer active.</td>
+            </tr>
+            <tr>
+                <td id="field4">Pricing Mode</td>
+                <td id="fields4" style="font-weight: bold; width: 17.65%;">Radio Button</td>
+                <td id="fields4">Pricing Mode is the framework from which the pricing is decided.  The choices are <strong>Private Label</strong>, <strong>Production Date</strong>, and <strong>Purchase Order</strong>.</td>
+                <td id="fields4">This value is used to determine whether pricing needs to be changed or renewed when placing an order.</td>
+            </tr>
+            <tr>
+                <td id="field4">Customer class</td>
+                <td id="fields4" style="font-weight: bold; width: 17.65%;">Radio Button</td>
+                <td id="fields4">This field describes the customer classification into market segments, which is divided into two main choices (<strong>Co-Pack</strong> or <strong>Trade</strong>) and a third <strong>Other</strong> option if the customer does not meet the other two class types.  Please see this page on <a href="">Customer Classes</a> for additional details.</td>
+                <td id="fields4">This field is used throughout Jazz where market segment information is needed.  This includes:
+                  <ul>
+                    <li>Finished goods, including mismatched inventory, barcode inventory reporting, and repacking/restacking,</li> 
+                    <li>Attaching items to a Price Sheet</li>
+                    <li>Order invoicing</li>
+                  </ul>
+                </td>
+            </tr>
+            <tr>
+                <td id="field4">Customer group</td>
+                <td id="fields4" style="font-weight: bold; width: 17.65%;">Drop-Down Menu</td>
+                <td id="fields4">Customers can be grouped together if several use the same formulas / place identical orders. Usually group members are part of the same large company, but it can be any group. Groups are created under the Customer Group menu option in the SA module.</td>
+                <td id="fields4">This data is referenced throughout Jazz to find specific associations belonging to a specified customer group, such as a common <strong>Contract</strong>, <strong>R/M coordinator</strong>, <strong>CSR</strong> or <strong>Aged R/M Extension Method</strong>.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<button class="accordion">Storage</button>
+<div class="panel">
+    <table cellspacing="2" cellpadding="2" border="1" width="100%">
+        <tbody>
+            <tr>             
+                <td id="field5">Grace Days After Q/A</td>
+                <td id="fields5" style="font-weight: bold; width: 17.65%;">Numeric text field.</td>
+                <td id="fields5">Number of grace days allowed after finished goods have been released from QA hold.</td>
+                <td id="fields5">Grace days are used for calculating f/g Storage Fees.</td>
+            </tr>
+            <tr>             
+                <td id="field5">Double Stack Pallet Rate/Pallet</td>
+                <td id="fields5" style="font-weight: bold; width: 17.65%;">Numeric text field.</td>
+                <td id="fields5">Double stack weekly rate per pallet – double stacking describes when one pallet is stacked on top of another</td>
+                <td id="fields5">Double Stack Pallet Rate is used to calculate f/g <strong>Storage Fees</strong>.</td>
+            </tr>
+            <tr>             
+                <td id="field5">Single Stack Pallet Rate/Pallet</td>
+                <td id="fields5" style="font-weight: bold; width: 17.65%;">Numeric text field.</td>
+                <td id="fields5">Single stack weekly rate per pallet – single stacking describes storage of a solo pallet.</td>
+                <td id="fields5">Single Stack Pallet Rate is used to calculate f/g <strong>Storage Fees</strong>.</td>
+            </tr>
+            <tr>
+                
+                <td id="field5">Lot Bar Code Prefix</td>
+                <td id="fields5" style="font-weight: bold; width: 17.65%;">Alphanumeric text field</td>
+                <td id="fields5">2 character finished goods lot bar code prefix. If entered, a lot number bar code is printed on the finished goods pallet label.</td>
+                <td id="fields5">The Lot Barcode Prefix is used in the printing of Pallet ID barcodes.</td>
+                                
+            </tr>
+            <tr>             
+                <td id="field5">UPC-A Prefix</td>
+                <td id="fields5" style="font-weight: bold; width: 17.65%;">Numeric text field.</td>
+                <td id="fields5">Single-digit (0-9) prefix for UPC-A barcode. UPC-A is the retail barcode, which identifies the manufacturer and specific product. Rest of barcode is managed by <a href="http://www.uc-council.org/">Uniform Code Council</a>.</td>
+                <td id="fields5">The UPC-A Prefix is used in the printing of Pallet ID barcodes.</td>
+            </tr>
+            <tr>             
+                <td id="field5">DC Label</td>
+                <td id="fields5" style="font-weight: bold; width: 17.65%;">Checkbox</td>
+                <td id="fields5">Check this box if the customer requires a distribution center label on all pallets (almost exclusively used on Walgreens/Soylent orders).</td>
+                <td id="fields5"><span>This DC Label flag is checked in several places throughout Jazz, including:</span>
+                  <ul>
+                    <li>a specific search when loading pallets onto a Walgreens/Soylent sales order (checking that the correct Walgreens shipping label has been printed)</li>
+                    <li>Printing a Walgreens-specific BOL</li>
+                    <li>Displaying Ship-To information (4-digit Walgreens warehouse ID)</li>
+                  </ul>
+                </td>
+            </tr>
+            <tr>             
+                <td id="field5">Load ID</td>
+                <td id="fields5" style="font-weight: bold; width: 17.65%;">Checkbox</td>
+                <td id="fields5">Check this box if the customer requires a distribution center label and a warehouse load ID on that label.</td>
+                <td id="fields5">The Load ID is used to in setting up/printing Walgreens/Soylent Pallet ID labels, in scheduling traffic appointments (determining if a customer requires a warehouse load ID), and truck booking consolidation.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+
+</div>
+  <br />
+    <span>Footer text + links</span>
+  <br />&nbsp;<br />
+</div>
+</body>
+</html>

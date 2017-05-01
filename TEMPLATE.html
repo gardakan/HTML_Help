@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>--page title--</title>
+    <script src="jquery.js"></script>
+    <script>
+       $(document).ready(function() {
+           $('[data-toggle="toggle"]').change(function(){
+               $(this).parents().next('.hide').toggle();
+           });
+       })(jQuery);
+    </script>
+    
+</head>
+
+<body>
+<div class="sidebar">
+  <span style="color: #000000">
+    <br />
+      <div style="width: 65%; display: block; margin: auto;"><a class="side-title" href="/jazz/HTML_Help/help-home.html" rel="home">Jazz Help</a></div>
+    <br />
+    <br />
+    <img class="center" src="file:///C:\Users\jtamm\Documents\My Web Sites\jazzdocs\images\jp.PNG"/>
+    <br />
+    <br />
+    <div class="container">
+
+
+<div class="accordion" id="onsidebar" style="padding: 10px; width: 161px;"><a id="special_link" href="path/to/current-page.html">--Current page name here--</a></div>
+
+<button class="accordion" id="onsidebar">Bounce Bar Options</button>
+<div class="panel">
+  <!-- content -->
+    <table style="margin-left: 31px; width: 181px;" cellspacing="2" cellpadding="2" border="1" width="100%">
+            <tbody>
+                <tr>
+                  <td>
+                    <a id="bbarone" href="path/to/related-page.html">--bounce bar option #1 goes here--</a> <!-- edit href in a tag -->
+                  </td>
+                </tr>
+            </tbody>
+    </table>
+</div>
+
+<button class="accordion" id="onsidebar">Parent Directory</button>
+<div class="panel">
+  <!-- content -->
+    <table style="margin-left: 31px; width: 181px;" cellspacing="2" cellpadding="2" border="1" width="100%">
+            <tbody>
+                <tr>
+                  <td>
+                    <a id="bbarone" style="font-size: 115%; font-weight: bold;" href="path/to/related-page.html">--Parent Directory--</a> <!-- edit href in a tag -->
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a id="bbarone" href="path/to/related-page.html">- &nbsp;&nbsp; --Sub-Directory #1--</a> <!-- edit href in a tag -->
+                  </td>                                                
+                </tr>                                                  
+                <tr>                                                   
+                  <td>                                                 
+                    <a id="bbarone" href="path/to/related-page.html">- &nbsp;&nbsp;&nbsp;&nbsp; --Sub-Directory #2--</a> <!-- edit href in a tag, add as many sub-directories as needed -->
+                  </td>                                                
+                </tr>                                                  
+                <tr>                                                   
+                  <td>                                                 
+                    <a id="bbarone" href="path/to/related-page.html">- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>--Current Page--</strong></a> <!-- edit href in a tag -->
+                  </td>
+                </tr>
+            </tbody>
+    </table>
+</div>
+
+
+    </div>
+  </span>
+</div>
+
+<div class="content">
+  <div  style="padding-left: 10px;">
+    <br />
+      <h1 id="heading">--Page name here--</h1>
+    <br />&nbsp;<br />
+  <br />
+  --intro text here--<br />
+  <br />
+  <br />
+  </div>
+<div class="info">
+<table cellspacing="2" cellpadding="2" border="1" width="100%">
+    <thead>
+        <tr>
+        <!-- field headings remain the same for all detail screen help pages -->
+            <th style="width: 11.76%;">Field</th>
+            <th style="width: 17.65%;">Field Type</th>
+            <th style="width: 35.29%;">Description</th>
+            <th style="width: 35.29%;">Use In Jazz</th>
+        </tr>
+    </thead>
+</table>
+<button class="accordion">--Section heading--</button>
+<div class="panel">
+  <!-- content -->
+    <table cellspacing="2" cellpadding="2" border="1" width="100%">
+            <tbody>
+                <tr>
+                    <td id="field1">--field heading--</td>
+                    <td id="fields1" style="font-weight: bold; width: 17.65%;">--field type description--</td>
+                    <td id="fields1">--Description of field--</td>
+                    <td id="fields1">--description of field's context within Jazz</td>
+                </tr>
+
+                <!-- add as many <tr>'s as needed.  Use id #'s up to field/s5 for different color backgrounds for different sections.  Add more id's if more than 6 sections are needed.  -->
+
+            </tbody>
+    </table>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+
+</div>
+  <br />
+    <span style="display:table; margin:0 auto;"><a href="mailto:gary.keefe@jasperproducts.com?subject=M/P module - Bug Report" id="special_link">Report an issue</a> | 2016 <a href="www.jasperproducts.com" id="special_link">Jasper Products</a></span>
+  <p style="margin: 24px;"></p>
+</div>
+</body>
+</html>
